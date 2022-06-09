@@ -1,0 +1,119 @@
+/*============================
+| Portfolio page
+============================
+*/
+
+/*Portfolio filter button*/
+
+.filter {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter .item {
+margin-right: 8px;
+
+&:last-child {
+        margin-right: 0;
+}
+
+&:hover,
+&:focus {
+        box-shadow: var(--filter-btn-shadow);
+}
+
+}
+
+.filter .btn {
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondary-bg-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+&:hover,
+&:focus {
+        color: var(--accent-txt-cl);
+        background-color: var(--accent-cl);
+    }
+}
+
+/*Ourwork*/
+
+.grid.project {
+    --items: 9;
+    flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1)) / var(--items));
+
+}
+
+.project-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-bg-cl);
+    transform: translateY(100%);
+    transition: transform var(--fast-anim) var(--timing-function);
+}
+
+.project:hover .project-overlay {
+    transform: translateY(0);
+}
+
+.project-text {
+    position: absolute;
+    bottom: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--main-bg-cl);
+}
+
+.project:hover,
+.project:hover:focus {
+    box-shadow: var(--card-shadow);
+}
+
+.card {
+    padding: 20px 24px;
+    border: 1px solid var(--card-border-cl);
+}
+
+.card .title {
+    margin-bottom: 4px;
+
+    color: var(--secondary-txt-cl);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.card .text {
+    font-size: 16px;
+    line-height: 1.88;
+}

@@ -1,0 +1,11 @@
+/* Сітка для колекції з елементів */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);
+}
+
+.grid-item {
+    flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1)) / var(--items));
+}

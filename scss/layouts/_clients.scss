@@ -1,0 +1,40 @@
+/* Clients icons */
+
+.clients {
+
+    padding: 0;
+    /*display: flex;
+    flex-wrap: wrap;
+    gap: var(--card-set-gap);*/
+}
+
+.clients-item {
+    --items: 6;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-cl);
+    border-radius: 4px;
+    transition: border-color var(--fast-anim) var(--timing-function);
+
+&:hover {
+        border-color: var(--accent-cl);
+    }
+
+}
+
+.clients-icon {
+    fill: var(--icons-cl);
+    transition: fill var(--fast-anim) var(--timing-function);
+}
+
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-cl);
+}

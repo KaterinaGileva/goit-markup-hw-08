@@ -1,0 +1,38 @@
+/*
+============================
+| Team section
+============================
+*/
+
+.team {
+    background-color: var(--secondary-bg-cl);
+}
+
+.team-list {
+    padding: 0;
+    margin: 0;
+}
+
+.member .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--secondary-txt-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.member .text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+}
+
+.team .member {
+    background-color: var(--main-bg-cl);
+    box-shadow: var(--member-shadow);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+}

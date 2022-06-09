@@ -1,0 +1,56 @@
+/*
+============================
+| Секція "Герой"
+============================
+*/
+.hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--social-cl);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/geroy-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    padding-left: 452px;
+    padding-right: 452px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--accent-txt-cl);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__btn {
+    display: block;
+    margin-top: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 32px;
+
+    background-color: var(--accent-cl);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--accent-txt-cl);
+    border: 1px solid var(--btn-bg);
+    border-radius: 4px;
+
+&:hover,
+&:focus {
+        color: var(--accent-txt-cl);
+        background-color: var(--btn-bg-cl);
+    }
+}
+
