@@ -23,24 +23,22 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
-    /*border-radius: 50%;*/
     outline: none;
-
-    
     margin-left: auto;
 
-&:hover {
+.menu-toggle:hover {
             fill: var(--accent-cl);
         }
     
-&:focus {
+.menu-toggle:focus {
             fill: var(--accent-cl);
         }
+
 }
 
 @media (min-width: 768px) {
 
-    & {
+    .menu-toggle {
         display: none;
     }
 }
@@ -49,12 +47,13 @@
     transform: translateX(0);
 }
 
-/*.menu-container .menu-toggle {
+.menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: black;
-}*/
+    top: 10px;
+    right: 15px;
+    fill: black;
+
+}
 
 .mobile-nav__list {
 margin-bottom: 274px;
