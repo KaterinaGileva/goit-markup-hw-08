@@ -4,6 +4,7 @@
   |============================
 */
 .backdrop {
+
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +12,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     transition: opacity var(--fast-anim), visibility var(--fast-anim);
+    overflow-y: scroll;
 }
+
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -20,13 +23,18 @@
 }
 
 .modal-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-
-    transform: translate(-50%, -50%);
-    width: 528px;
+    @media (min-width:600px) {
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 40px;
+        
+            transform: translate(-50%, -50%);
+            max-width: 528px;
+            width: 100%;
+        
+    }
+  
     background-color: var(--main-bg-cl);
     transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
 }

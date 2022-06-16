@@ -1,11 +1,14 @@
 /*Studio header*/
 .header {
     border: 1px solid var(--header-border-cl);
+    position: relative;
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    
+    
 }
 
 /*Основна навігація сайту*/
@@ -15,7 +18,19 @@
     align-items: center;
 }
 
+ @include mq (mobile-only) {
+
+.navigation__list {
+        display: none;
+     }
+
+.header__group {
+        display: none;
+    }
+ }
+
 .navigation__item {
+
     margin-right: 50px;
 
     color: var(--secondary-txt-cl);
@@ -28,6 +43,7 @@
     &:last-child {
         margin-right: 0;
     }
+
 }
 
 .navigation__link {

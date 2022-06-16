@@ -4,11 +4,25 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(tablet) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+    @include mq(desktop) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
 &_title {
             margin-bottom: 50px;

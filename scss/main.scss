@@ -1,8 +1,8 @@
 // utils
 @import './utils/vars';
 @import './utils/visually-hidden';
-/*@import './utils/placeholders';
-@import './utils/mixins';*/
+/*@import './utils/placeholders';*/
+@import './utils/mixins';
 
 // base styles
 @import './base/common';
@@ -16,7 +16,7 @@
 @import './components/buttons';
 @import './components/socials';
 @import './components/modal-form';
-
+@import './components/mobile-menu';
 @import './components/contact-form';
 
 // layouts

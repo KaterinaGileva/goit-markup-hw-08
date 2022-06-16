@@ -18,49 +18,60 @@
    <!--<link rel="stylesheet" href="./css/styles.css">-->
    <link rel="stylesheet" href="./css/main.min.css">
  </head>
+
 <body>
 
+<!--Шапка сайту-->
+<header class="header">
+<div class="container header__container">
+    <a class="logo header__logo" href="./index.html" lang="en">
+    <span class="header__logo--accent">Web</span>Studio</a>
+    
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+<use class="icon-menu" href="./images/icons.svg#menu"></use></svg>
 
-    <!--Шапка сайту-->
-    <header class="header">
-        <div class="container header__container">
-            <a class="logo header__logo" href="./index.html" lang="en"><span class="header__logo--accent">Web</span>Studio</a>
-       
-       <!--Якорні посилання-->
-
-            <nav class="navigation">
-            <ul class="navigation__list list">
-                <li class="navigation__item"> <a class="link navigation__link current" href="#">Студия</a></li>
-                <li class="navigation__item"> <a class="link navigation__link" href="./portfolio.html">Портфолио</a></li>
-                <li class="navigation__item"> <a class="link navigation__link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <div class="header__group">
-            <ul class="list header__list">
-                <li class="header__item"><a class="link header__link current" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12">
-                    <use href="./images/sprite.svg#envelope"></use>
-                </svg>info@devstudio.com</a></li>
-                <li class="header__item"><a class="link header__link" href="tel:+380961111111 "><svg class="header__icon" width="10" height="16">
-                    <use href="./images/sprite.svg#smartphone"></use>
-                </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
+</button>
+          
+   <ul class="navigation__list list">
+          <li class="navigation__item"> 
+           <a class="link navigation__link current" href="#">Студия</a>
+          </li>
+          <li class="navigation__item"> 
+           <a class="link navigation__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="navigation__item"> 
+           <a class="link navigation__link" href="#">Контакты</a>
+          </li>
+    </ul>
+    
+    <div class="header__group">
+       <ul class="header__list list ">
+          <li class="header__item">
+            <a class="link header__link current" href="mailto:info@devstudio.com">
+            <svg class="header__icon" width="16" height="12">
+            <use href="./images/sprite.svg#envelope"></use>
+            </svg>info@devstudio.com</a></li>
+          <li class="header__item">
+            <a class="link header__link" href="tel:+380961111111">
+            <svg class="header__icon" width="10" height="16">
+            <use href="./images/sprite.svg#smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+          </li>
+       </ul>
     </div>
-        
-    </header>
-   
-    <main>
+</div>
+</header>
+<main>
 
-    <!--Герой-->
+<!--Герой
 
 <section class="hero">
 <div class="hero__container">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
-    
-    <!--Модальне вікно-->
+-->
+    <!--Модальне вікно
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-wrapper">
@@ -74,7 +85,8 @@
             </svg>
             </button>
 <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
-<!-- дані відвідувача -->
+-->
+<!-- дані відвідувача 
 <form class="modal-form">
 <label class="modal-form__group">
     <span class="modal-form__label">Имя</span>
@@ -131,8 +143,8 @@
     <textarea class="modal-form__message" 
     name="user-message" rows="6" placeholder="Введите текст"></textarea>
 </label>
-
-<!-- політика приватності (чекбокс) -->
+-->
+<!-- політика приватності (чекбокс) 
 
 <label class="modal-form__policy-group">
 <input class="modal-form__checkbox visually-hidden" type="checkbox" 
@@ -157,8 +169,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
 
 
 </section>
-
-        <!--Наши преимущества-->
+-->
+        <!--Наши преимущества
 
 <section class="feature section">
 <div class="feature__container container">
@@ -204,8 +216,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </ul>
 </div>
 </section>
-
-<!--Галлерея деятельности-->
+-->
+<!--Галлерея деятельности
 
 <section class="gallery section">
     <div class="gallery__container container">
@@ -229,8 +241,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </div>
    
 </section>
-
-<!--Секція "Наша команда"-->
+-->
+<!--Секція "Наша команда"
 
 <section class="team section">
     <div class="container">
@@ -387,8 +399,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
   </ul>
   </div> 
 </section>
-
-<!--Cекція "Постійні клієнти"-->
+-->
+<!--Cекція "Постійні клієнти"
 
 <section class="section">
     <div class="container">
@@ -443,10 +455,59 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
             </li>
         </ul>
     </div>
-</section>
+</section>-->
+
+
+
+
 </main>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+     <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-close" href="./images/icons.svg#close"></use>
+    </svg>
+    </button>
+<ul class="mobile-nav__list list">
+    <li class="mobil-nav__item">
+        <a class="link mobil-nav__link current" href="#">Студия</a>
+    </li>
+    <li class="mobile-nav__item">
+        <a class="link mobil-nav__link" href="./portfolio.html">Портфолио</a>
+    </li>
+    <li class="mobile-nav__item">
+        <a class="link mobil-nav__link" href="#">Контакты</a>
+    </li>
+</ul>
+<ul class="contacts__list list ">
     
-<!--Подвал-->
+    <li class="contacts__item">
+        <a class="link contacts__link--tel" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+    </li>
+
+<li class="contacts__item">
+    <a class="link contacts__link--mail" href="mailto:info@devstudio.com">
+        info@devstudio.com</a>
+</li>
+
+</ul>
+<ul class="mobile-menu__socials list">
+    <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">Instagram </a>
+    </li>
+    <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">Twitter</a>
+    </li>
+    <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">Facebook</a>
+    </li>
+    <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">LinkedIn</a>
+    </li>
+</ul>
+</div>
+<!--Подвал
 
 <footer class="footer">
 <div class="container">
@@ -491,8 +552,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
             </li>
         </ul>
     </div>
-    
-<!--Подписка на рассылку-->
+-->
+<!--Подписка на рассылку
 
     <div class="subscribe">
         <h3 class="title">Подпишитесь на рассылку</h3>
@@ -507,10 +568,14 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </div>
     </div>
 
-</footer>
+</footer>-->
 
-   
-<script src="./js/modal.js"></script>
+
+<!--<script src="./js/modal.js"></script>-->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
 

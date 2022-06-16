@@ -1,0 +1,145 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--main-bg-cl);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-toggle {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    /*border-radius: 50%;*/
+    outline: none;
+
+    
+    margin-left: auto;
+
+&:hover {
+            fill: var(--accent-cl);
+        }
+    
+&:focus {
+            fill: var(--accent-cl);
+        }
+}
+
+@media (min-width: 768px) {
+
+    & {
+        display: none;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+/*.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: black;
+}*/
+
+.mobile-nav__list {
+margin-bottom: 274px;
+}
+
+.mobil-nav__link {
+    display: block;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: var(--secondary-txt-cl);
+    text-decoration: none;
+
+    &:hover {
+            color: var(--accent-cl);
+        }
+    
+    &:focus {
+            color: var(--accent-cl);
+        }
+    
+    &:current {
+            color: var(--accent-cl);
+}
+}
+
+.contacts__list {
+
+    padding-bottom: 64px;
+}
+
+.contacts__link--tel {
+
+        display: block;
+        padding-bottom: 32px;
+    
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;       
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+        text-decoration: none;
+    
+}
+
+.contacts__link--mail {
+
+    padding-bottom: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    text-decoration: none;
+
+}
+
+
+
+.mobile-menu__item {
+
+display: inline-block;
+margin-right: 20px;
+padding-right: 10px;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+&:last-child {
+padding-right: 0;
+border: none;
+    }
+}
+
+.mobile-menu__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2196F3;
+
+}

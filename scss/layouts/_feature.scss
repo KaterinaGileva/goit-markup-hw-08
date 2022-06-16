@@ -6,13 +6,25 @@
 
 .feature__picture {
     background-color: var(--secondary-bg-cl);
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-}
+    /*margin-bottom: 30px;*/
+
+@include mq(tablet) {
+        width: 354px;
+        
+        }
+                
+
+    @include mq(desktop) {
+        width: 270px;
+       
+    }
+
+
 
 .feature__title {
     margin-bottom: 10px;
@@ -21,6 +33,12 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+     }
+
+         @include mq(mobile-only) {
+            text-align: center;
+         }
+
 }
 
 .feature p {

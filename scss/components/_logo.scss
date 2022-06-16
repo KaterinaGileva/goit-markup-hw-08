@@ -2,24 +2,34 @@
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
     color: var(--logo-cl);
+
+@include mq(desktop) {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+     }
 }
 
 .header__logo {
-    margin-right: 93px;
 
+@include mq(tablet) {
+        margin-right: 93px;
+    }
+    
 &--accent {
         color: var(--accent-cl);
     }
 }
-
+/*
 .footer .logo {
     color: var(--accent-txt-cl);
 }
 
 .logoaccent {
     color: var(--accent-cl)
-}
+}*/
