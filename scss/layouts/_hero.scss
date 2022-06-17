@@ -3,20 +3,99 @@
 | Секція "Герой"
 ============================
 */
-.hero__container {
-   padding-top: 200px;
-    padding-bottom: 0px;
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--social-cl);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/geroy-fon.jpg);
+.hero {
+    background-color: var(--social-cl);;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 50%;
     background-size: cover;
-    text-align: center;
+}
+/*
+ @media screen and (min-device-pixel-ratio: 1),
+ screen and(min-resolution:96dpi),
+ screen and(min-resolution:1dppx) {
+     .hero {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+             url(../images/hero/mobile-hero-min.jpg);
+     }
+ }
+
+ @media screen and (min-device-pixel-ratio: 2),
+ screen and(min-resolution:192dpi),
+ screen and(min-resolution:2dppx) {
+     .hero {
+         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+             url(../images/hero/mobile-hero@2x-min.jpg);
+     }
+ }
+ 
+
+ @media screen and (min-width: 768px) {
+     
+     @media screen and (min-device-pixel-ratio: 1),
+     screem and(min-resolution:96dpi),
+     screen and(min-resolution:1dppx) {
+         .hero {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                 url(../images/hero/table-hero-min.jpg);
+         }
+     }
+
+     @media screen and (min-device-pixel-ratio: 2),
+     screem and(min-resolution:192dpi),
+     screen and(min-resolution:2dppx) {
+         .hero {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                 url(../images/hero/table-hero@2x-min.jpg);
+         }
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+     
+     @media screen and (min-device-pixel-ratio: 1),
+     screem and(min-resolution:96dpi),
+     screen and(min-resolution:1dppx) {
+         .hero {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                 url(../images/hero/desktop-hero-min.jpg);
+         }
+     }
+
+     @media screen and (min-device-pixel-ratio: 2),
+     screem and(min-resolution:192dpi),
+     screen and(min-resolution:2dppx) {
+         .hero {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                 url(../images/hero/desktop-hero@2x-min.jpg);
+         }
+     }
+ }
+*/
+.hero__container {
+   
+    max-width: 100%;
+    }
     
+.hero__title {
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        /*min-height: 120px;*/
+
+        color: var(--accent-txt-cl);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     /*padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -30,18 +109,6 @@
     background-size: cover;*/
 }
 
-.hero__title {
-
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    color: var(--accent-txt-cl);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-
     /*
     padding-left: 452px;
     padding-right: 452px;
@@ -53,10 +120,32 @@
     color: var(--accent-txt-cl);
     letter-spacing: 0.06em;
     text-transform: uppercase;*/
-}
 
 .hero__btn {
-    display: block;
+        display: flex;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 32px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        background-color: var(--accent-cl);
+        color: var(--accent-txt-cl);
+        border: 1px solid var(--btn-bg);
+        border-radius: 4px;
+        
+        
+        &:hover,
+        &:focus {
+            
+            color: var(--accent-txt-cl);
+            background-color: var(--btn-bg-cl);
+        }
+    }
+    /*display: block;
     margin-top: 0;
 
     margin-right: auto;
@@ -76,6 +165,6 @@
 &:focus {
         color: var(--accent-txt-cl);
         background-color: var(--btn-bg-cl);
-    }
-}
+    }*/
+
 

@@ -45,16 +45,16 @@
           </li>
     </ul>
     
-    <div class="header__group">
-       <ul class="header__list list ">
-          <li class="header__item">
-            <a class="link header__link current" href="mailto:info@devstudio.com">
-            <svg class="header__icon" width="16" height="12">
+    <div class="header__contacts">
+       <ul class="header__contacts-list list ">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link link current" href="mailto:info@devstudio.com">
+            <svg class="header__contacts-icon" width="16" height="12">
             <use href="./images/sprite.svg#envelope"></use>
             </svg>info@devstudio.com</a></li>
-          <li class="header__item">
-            <a class="link header__link" href="tel:+380961111111">
-            <svg class="header__icon" width="10" height="16">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link link" href="tel:+380961111111">
+            <svg class="header__contacts-icon" width="10" height="16">
             <use href="./images/sprite.svg#smartphone"></use>
             </svg>+38 096 111 11 11</a>
           </li>
@@ -67,11 +67,11 @@
 <!--Герой-->
 
 <section class="hero">
-<div class="hero__container">
+<div class="hero__container container">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
 
-    <!--Модальне вікно
+    <!--Модальне вікно-->
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-wrapper">
@@ -85,8 +85,8 @@
             </svg>
             </button>
 <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
--->
-<!-- дані відвідувача 
+
+<!-- дані відвідувача--> 
 <form class="modal-form">
 <label class="modal-form__group">
     <span class="modal-form__label">Имя</span>
@@ -143,8 +143,8 @@
     <textarea class="modal-form__message" 
     name="user-message" rows="6" placeholder="Введите текст"></textarea>
 </label>
--->
-<!-- політика приватності (чекбокс) 
+
+<!-- політика приватності (чекбокс) -->
 
 <label class="modal-form__policy-group">
 <input class="modal-form__checkbox visually-hidden" type="checkbox" 
@@ -164,15 +164,15 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
 </form>
 
     </div>
-   </div>-->
+   </div>
 </div>
 
 </section>
 
-        <!--Наши преимущества
+        <!--Наши преимущества-->
 
 <section class="feature section">
-<div class="feature__container container">
+<div class="container">
     <h2 class="visually-hidden">Наши преимущества</h2>
     <ul class="grid list">
     <li class="grid-item">
@@ -181,6 +181,7 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
             <use href="images/sprite.svg#antenna"></use>
         </svg>
     </div>
+
         <h3 class="feature__title">Внимание к деталям</h3>
         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
     </li>
@@ -215,10 +216,10 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </ul>
 </div>
 </section>
--->
-<!--Галлерея деятельности
 
-<section class="gallery section">
+<!--Галлерея деятельности-->
+
+<section class="gallery__section">
     <div class="gallery__container container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="grid list">
@@ -240,8 +241,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </div>
    
 </section>
--->
-<!--Секція "Наша команда"
+
+<!--Секція "Наша команда"-->
 
 <section class="team section">
     <div class="container">
@@ -398,8 +399,8 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
   </ul>
   </div> 
 </section>
--->
-<!--Cекція "Постійні клієнти"
+
+<!--Cекція "Постійні клієнти"-->
 
 <section class="section">
     <div class="container">
@@ -454,10 +455,7 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
             </li>
         </ul>
     </div>
-</section>-->
-
-
-
+</section>
 
 </main>
 
@@ -506,6 +504,7 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
     </li>
 </ul>
 </div>
+
 <!--Подвал
 
 <footer class="footer">
@@ -570,7 +569,7 @@ role="checkbox" aria-checked="false" aria-labelledby="chk1-label">
 </footer>-->
 
 
-<!--<script src="./js/modal.js"></script>-->
+<script src="./js/modal.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>

@@ -5,14 +5,16 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
 
-    &.modal-open {
+    /*&.modal-open {
         overflow: hidden;
-    }
+    }*/
 }
 
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(tablet) {
             padding-top: 60px;
@@ -24,14 +26,32 @@ body {
             padding-bottom: 94px;
         }
 
-&_title {
+&-title {
             margin-bottom: 50px;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.17;
             text-align: center;
             color: var(--secondary-txt-cl);
+
+@include mq(mobile-only) {
+
+        font-size: 28px;
+        line-height: 1.18;
+
     }
+    
+}
+
 }
 
 
+
+/*.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-txt-cl);
+}*/

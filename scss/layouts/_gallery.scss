@@ -3,22 +3,28 @@
 | Gallery work section
 ============================
 */
+.gallery__section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
-.gallery {
-    @media (max-width: 1200px){
+@include mq(not-desktop) {
+        display: none;
+    }
+
+    padding-top: 0;
+
+}
+
+/*.gallery__container {
+    @include mq(not-desktop){
         display: none;
     }
     padding-top: 0;
-}
+}*/
 
-.section-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--secondary-txt-cl);
-}
+
 
 .gallery__item {
     position: relative;
@@ -52,4 +58,6 @@
     line-height: 1.14;
 
     color: var(--main-bg-cl);
+
+
 }

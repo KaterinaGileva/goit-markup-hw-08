@@ -6,12 +6,15 @@
 
 .header__container {
     display: flex;
-
     align-items: center;
+        
+    @include mq (mobile-only) {
+
+    position: relative;
+    justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 15px;
-    
+}
 }
 
 /*Основна навігація сайту*/
@@ -19,34 +22,26 @@
 .navigation__list {
     display: flex;
     align-items: center;
+
+@include mq (mobile-only) {
+            display: none;
+        }
 }
 
- @include mq (mobile-only) {
-
-.navigation__list {
-        display: none;
-     }
-
-.header__group {
-        display: none;
-    }
- }
-
 .navigation__item {
-
     margin-right: 50px;
-
-    color: var(--secondary-txt-cl);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-txt-cl);
 
     &:last-child {
         margin-right: 0;
     }
-
 }
 
 .navigation__link {
@@ -80,6 +75,7 @@
     }
 
 }
+
 
 
 

@@ -17,9 +17,11 @@
 
 .header__logo {
     
+@include mq(tablet-only) {
+        margin-right: 88px;
+    }
 
-
-@include mq(tablet) {
+@include mq(desktop) {
         margin-right: 93px;
     }
     
