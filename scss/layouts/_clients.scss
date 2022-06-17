@@ -1,15 +1,22 @@
 /* Clients icons */
 
-.clients {
-
+/*.clients {
+   
     padding: 0;
-    /*display: flex;
-    flex-wrap: wrap;
-    gap: var(--card-set-gap);*/
-}
+    
+}*/
 
-.clients-item {
+.clients__item {
+
     --items: 6;
+
+   @include mq (mobile-only) {
+    --items: 2;
+    }
+
+    @include mq (tablet-only) {
+    --items: 3;
+    }
 }
 
 .clients-link {
@@ -21,6 +28,10 @@
     border: 1px solid var(--icons-cl);
     border-radius: 4px;
     transition: border-color var(--fast-anim) var(--timing-function);
+
+   @include mq (mobile-only) {
+    margin-right: 0;
+   }
 
 &:hover {
         border-color: var(--accent-cl);
@@ -34,7 +45,11 @@
 }
 
 
-.clients-link:hover .clients-icon,
+
 .clients-link:focus .clients-icon {
     fill: var(--accent-cl);
+}
+
+.clients-link:hover .clients-icon {
+        fill: var(--accent-cl);
 }

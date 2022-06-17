@@ -55,18 +55,19 @@ margin-right: 8px;
 
 /*Ourwork*/
 
-.grid.project {
-    --items: 9;
-    flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1)) / var(--items));
+/*.grid.project {
+    --items: 3;
+    flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1)) 
+    / var(--items));
 
-}
+}*/
 
-.project-thumb {
+.project__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.project-overlay {
+.project__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -77,11 +78,11 @@ margin-right: 8px;
     transition: transform var(--fast-anim) var(--timing-function);
 }
 
-.project:hover .project-overlay {
+.project__item:hover .project__overlay {
     transform: translateY(0);
 }
 
-.project-text {
+.project__text {
     position: absolute;
     bottom: 0;
     padding: 63px 24px;
@@ -93,8 +94,8 @@ margin-right: 8px;
     color: var(--main-bg-cl);
 }
 
-.project:hover,
-.project:hover:focus {
+.project_item:hover,
+.project__item:hover:focus {
     box-shadow: var(--card-shadow);
 }
 

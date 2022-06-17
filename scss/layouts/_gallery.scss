@@ -4,27 +4,14 @@
 ============================
 */
 .gallery__section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+
+    padding-top: 0;
 
 @include mq(not-desktop) {
         display: none;
     }
-
-    padding-top: 0;
-
+ 
 }
-
-/*.gallery__container {
-    @include mq(not-desktop){
-        display: none;
-    }
-    padding-top: 0;
-}*/
-
-
 
 .gallery__item {
     position: relative;
