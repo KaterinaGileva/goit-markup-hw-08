@@ -125,6 +125,21 @@
 }*/
 }
 
+.project__img{
+
+
+@include mq(desktop) {
+            width: 370px;
+            height: 294px;
+}
+
+@include mq(tablet-only) {
+    width: 354px;
+    height: 294px;
+}
+
+}
+
 .project__overlay {
     position: absolute;
     top: 0;

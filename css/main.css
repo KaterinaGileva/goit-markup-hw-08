@@ -152,13 +152,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*justify-content: center;*/
   gap: var(--card-set-gap);
 }
 
 .grid-item {
-  -ms-flex-preferred-size: calc((100% - var(--card-set-gap)  * (var(--items) - 1))/ var(--items));
-      flex-basis: calc((100% - var(--card-set-gap)  * (var(--items) - 1))/ var(--items));
+  -ms-flex-preferred-size: calc((100% - var(--card-set-gap) * (var(--items) - 1))/ var(--items));
+      flex-basis: calc((100% - var(--card-set-gap) * (var(--items) - 1))/ var(--items));
 }
 
 @media screen and (max-width: 767.98px) {
@@ -167,26 +166,25 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .grid-item {
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - var(--card-set-gap)  * (var(--items) - 1))/ var(--items));
+      flex-basis: calc((100% - var(--card-set-gap)  * (var(--items) - 1))/ var(--items));
+}
+
+@media screen and (max-width: 767.98px) {
+  .clients__item {
     --items: 2;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .grid-item .clients__item {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .clients__item {
     --items: 3;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .grid-item .clients__item {
-    --items: 4;
-  }
-}
-
 @media screen and (min-width: 1280px) {
-  .grid-item .clients__item {
+  .clients__item {
     --items: 6;
   }
 }
@@ -249,28 +247,22 @@ img {
 
 /*Посилання на соцмережі*/
 /*Team*/
-/* Social icons */
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1280px) {
   .socials {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .socials {
-    margin-right: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -1211,122 +1203,101 @@ img {
 ============================
 */
 .hero {
-  background-color: var(--social-cl);
+  /*background-color: var(--social-cl);*/
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /**
+    |============================
+    | Завантаження звичайного фонового зображення для мобільної версії
+    |============================
+              */
+  background-image: url(../images/hero/hero-fon_sm.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+  background-image: url(../images/hero/hero-fon_sm.jpg), linear-gradient(to bottom, #191c26, #191c26);
+  /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x),
+                linear-gradient(to bottom, #191c26, #191c26);*/
 }
 
-/*
- @media screen and (min-device-pixel-ratio: 1),
- screen and(min-resolution:96dpi),
- screen and(min-resolution:1dppx) {
-     .hero {
-         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-             url(../images/hero/mobile-hero-min.jpg);
-     }
- }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-fon_sm@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: url(../images/hero/hero-fon_sm@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
+    /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x),
+                    linear-gradient(to bottom, #191c26, #191c26);*/
+  }
+}
 
- @media screen and (min-device-pixel-ratio: 2),
- screen and(min-resolution:192dpi),
- screen and(min-resolution:2dppx) {
-     .hero {
-         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-             url(../images/hero/mobile-hero@2x-min.jpg);
-     }
- }
- 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/hero-fon_md.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: url(../images/hero/hero-fon_md.jpg), linear-gradient(to bottom, #191c26, #191c26);
+    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);*/
+  }
+}
 
- @media screen and (min-width: 768px) {
-     
-     @media screen and (min-device-pixel-ratio: 1),
-     screem and(min-resolution:96dpi),
-     screen and(min-resolution:1dppx) {
-         .hero {
-             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/hero/table-hero-min.jpg);
-         }
-     }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-fon_md@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: url(../images/hero/hero-fon_md@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
+    /* background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);*/
+  }
+}
 
-     @media screen and (min-device-pixel-ratio: 2),
-     screem and(min-resolution:192dpi),
-     screen and(min-resolution:2dppx) {
-         .hero {
-             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/hero/table-hero@2x-min.jpg);
-         }
-     }
- }
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url(../images/hero/hero-fon_lg.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: url(../images/hero/hero-fon_lg.jpg), linear-gradient(to bottom, #191c26, #191c26);
+    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);*/
+  }
+}
 
- @media screen and (min-width: 1200px) {
-     
-     @media screen and (min-device-pixel-ratio: 1),
-     screem and(min-resolution:96dpi),
-     screen and(min-resolution:1dppx) {
-         .hero {
-             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/hero/desktop-hero-min.jpg);
-         }
-     }
-
-     @media screen and (min-device-pixel-ratio: 2),
-     screem and(min-resolution:192dpi),
-     screen and(min-resolution:2dppx) {
-         .hero {
-             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/hero/desktop-hero@2x-min.jpg);
-         }
-     }
- }
-*/
-.hero__container {
-  max-width: 100%;
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-fon_lg@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: url(../images/hero/hero-fon_lg@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
+    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);*/
+  }
 }
 
 .hero__title {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
-  margin-top: 0;
+  /*margin-top: 0;*/
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*min-height: 120px;*/
   color: var(--accent-txt-cl);
-  /*padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--social-cl);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/geroy-fon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
-/*
-    padding-left: 452px;
-    padding-right: 452px;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    color: var(--accent-txt-cl);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;*/
 .hero__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1349,27 +1320,6 @@ img {
   background-color: var(--btn-bg-cl);
 }
 
-/*display: block;
-    margin-top: 0;
-
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px 32px;
-
-    background-color: var(--accent-cl);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--accent-txt-cl);
-    border: 1px solid var(--btn-bg);
-    border-radius: 4px;
-
-&:hover,
-&:focus {
-        color: var(--accent-txt-cl);
-        background-color: var(--btn-bg-cl);
-    }*/
 /*
 ============================
 | Feature section
@@ -1522,15 +1472,13 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .clients__link {
-    /*margin-right: 0;*/
-    width: 210px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .clients__link {
-    /*margin-right: 0;*/
-    width: 226px;
+    width: 100%;
   }
 }
 
@@ -1549,6 +1497,12 @@ img {
 }
 
 .clients__link:hover .clients__icon {
+  fill: var(--accent-cl);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border: solid 1px var(--accent-cl);
   fill: var(--accent-cl);
 }
 
@@ -1850,6 +1804,20 @@ img {
 
       
 }*/
+}
+
+@media screen and (min-width: 1280px) {
+  .project__img {
+    width: 370px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .project__img {
+    width: 354px;
+    height: 294px;
+  }
 }
 
 .project__overlay {

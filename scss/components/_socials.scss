@@ -1,26 +1,17 @@
 /*Посилання на соцмережі*/
 
 /*Team*/
-/* Social icons */
 
-
-
-   .socials {
+.socials {
     display: flex;
-    
-
-    @include mq (mobile-only){
+    justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
-    justify-content: center;}
+    margin-bottom: 24px;
     
-    @include mq (tablet-only) {
-        margin-right: auto;
-       
-        
+@include mq (desktop) {
+    margin-bottom: 30px;  
 } 
 }
-
 
 .socials-item:not(:last-child) {
     margin-right: 10px;
