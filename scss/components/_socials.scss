@@ -1,18 +1,29 @@
 /*Посилання на соцмережі*/
 
-.socials {
+/*Team*/
+/* Social icons */
+
+
+
+   .socials {
     display: flex;
-    justify-content: center;
+    
+
+    @include mq (mobile-only){
     align-items: center;
-    margin-bottom: 30px;
-
-&-item:not(:last-child) {
-        margin-right: 10px;
-    }
-
-&-icon {
-    fill: currentColor;
+    margin-bottom: 60px;
+    justify-content: center;}
+    
+    @include mq (tablet-only) {
+        margin-right: auto;
+       
+        
+} 
 }
+
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .socials-link {
@@ -24,37 +35,57 @@
     background-color: var(--main-bg-cl);
     color: var(--icons-cl);
     border-radius: 50%;
-
-    &:hover,
-    &:focus {
-        color: var(--main-bg-cl);
-        background-color: var(--accent-cl);
-    }
 }
 
-.social-icon{
+.socials-link:hover,
+.socials-link:focus {
+    color: var(--main-bg-cl);
+    background-color: var(--accent-cl);
+}
+
+.socials-icon {
+    display: block;
+    fill: currentColor;
+    margin-bottom: 0;
+}
+
+/*Footer*/
+
+
+.social-icon {
+@include mq (desktop) {
     margin-left: 70px;
     margin-right: 10px;
+}
 
-& .title
- {
-        margin-bottom: 20px;
-        text-align: left;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-    }
-
-& .link {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--main-bg-cl);
-        }
-
-& .link:hover,
-& .link:focus {
-            background-color: var(--accent-cl);
+@include mq (tablet-only) {
+            margin-right: auto;
+           /* display: flex;*/
         }
 }
 
 
+.social-icon .title{
+
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+   @include mq (mobile-only){
+    display:block;
+    text-align: center;
+   }
+}
+
+.social-icon .link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--main-bg-cl);
+}
+
+.social-icon .link:hover,
+.social-icon .link:focus {
+    background-color: var(--accent-cl);
+}

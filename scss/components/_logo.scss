@@ -29,11 +29,15 @@
         color: var(--accent-cl);
     }
 }
-/*
-.footer .logo {
+
+.footer__logo {
+
+    display: block;
+    margin-bottom: 20px;
+    
     color: var(--accent-txt-cl);
 }
 
-.logoaccent {
+.footer__logo--accent {
     color: var(--accent-cl)
-}*/
+}

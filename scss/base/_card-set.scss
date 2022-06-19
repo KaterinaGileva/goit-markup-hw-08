@@ -3,21 +3,38 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
+
+    
+    /*justify-content: center;*/
     gap: var(--card-set-gap);
 }
 
-
 .grid-item {
-
-    @include mq (tablet-only){
-    --items: 2;
-    }
 
     @include mq (mobile-only) {
     --items: 1;
     }
 
-flex-basis: calc((100% - var(--card-set-gap) * 
-(var(--items) - 1))/ var(--items));
+    @include mq (tablet-only) {
+    --items: 2;
+    }
+
+.clients__item {
+    @include mq (mobile-only) {
+        --items: 3;}
+        
+    @include mq (tablet-only) {
+        --items: 4;
+    }
+
+    @include mq (desktop) {
+        --items: 6;
+        
+    }
+}
+
+flex-basis: calc((100% - var(--card-set-gap) 
+* (var(--items) - 1))/ var(--items));
 
 }
+
