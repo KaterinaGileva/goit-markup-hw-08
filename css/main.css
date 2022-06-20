@@ -1238,16 +1238,16 @@ img {
               */
   background-image: url(../images/hero/hero-fon_sm.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
   background-image: url(../images/hero/hero-fon_sm.jpg), linear-gradient(to bottom, #191c26, #191c26);
-  /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x),
-                linear-gradient(to bottom, #191c26, #191c26);*/
+  background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+  background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x), linear-gradient(to bottom, #191c26, #191c26);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/hero/hero-fon_sm@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
     background-image: url(../images/hero/hero-fon_sm@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
-    /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x), linear-gradient(to bottom, #191c26, #191c26);
   }
 }
 
@@ -1255,8 +1255,8 @@ img {
   .hero {
     background-image: url(../images/hero/hero-fon_md.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
     background-image: url(../images/hero/hero-fon_md.jpg), linear-gradient(to bottom, #191c26, #191c26);
-    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x), linear-gradient(to bottom, #191c26, #191c26);
   }
 }
 
@@ -1264,8 +1264,8 @@ img {
   .hero {
     background-image: url(../images/hero/hero-fon_md@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
     background-image: url(../images/hero/hero-fon_md@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
-    /* background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x),
-                        linear-gradient(to bottom, #191c26, #191c26);*/
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x), linear-gradient(to bottom, #191c26, #191c26);
   }
 }
 
@@ -1273,8 +1273,8 @@ img {
   .hero {
     background-image: url(../images/hero/hero-fon_lg.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
     background-image: url(../images/hero/hero-fon_lg.jpg), linear-gradient(to bottom, #191c26, #191c26);
-    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x), linear-gradient(to bottom, #191c26, #191c26);
   }
 }
 
@@ -1282,8 +1282,8 @@ img {
   .hero {
     background-image: url(../images/hero/hero-fon_lg@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
     background-image: url(../images/hero/hero-fon_lg@2x.jpg), linear-gradient(to bottom, #191c26, #191c26);
-    /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x),
-                        linear-gradient(to bottom, #191c26, #191c26);*/
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x), -webkit-gradient(linear, left top, left bottom, from(#191c26), to(#191c26));
+    background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x), linear-gradient(to bottom, #191c26, #191c26);
   }
 }
 

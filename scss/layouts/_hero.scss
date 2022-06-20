@@ -30,32 +30,32 @@
               */
         background-image: url(../images/hero/hero-fon_sm.jpg),
             linear-gradient(to bottom, #191c26, #191c26);
-        /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x),
-                linear-gradient(to bottom, #191c26, #191c26);*/
+        background-image: -webkit-image-set(url(../images/hero/hero-fon_sm.webp) 1x),
+                linear-gradient(to bottom, #191c26, #191c26);
     
         // Завантаження ретінізованого 2х фонового зображення
         @include mq(retina) {
             background-image: url(../images/hero/hero-fon_sm@2x.jpg),
                 linear-gradient(to bottom, #191c26, #191c26);
     
-            /* background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_sm@2x.webp) 2x),
+                    linear-gradient(to bottom, #191c26, #191c26);
         }
     
         //Завантаження звичайного фонового зображення для планшету 
         @include mq(tablet) {
             background-image: url(../images/hero/hero-fon_md.jpg),
                 linear-gradient(to bottom, #191c26, #191c26);
-            /*background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_md.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);
     
             // Завантаження ретінізованого 2х фонового зображення
             @include mq(retina) {
                 background-image: url(../images/hero/hero-fon_md@2x.jpg),
                     linear-gradient(to bottom, #191c26, #191c26);
     
-                /* background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x),
-                        linear-gradient(to bottom, #191c26, #191c26);*/
+                background-image: -webkit-image-set(url(../images/hero/hero-fon_md@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);
             }
         }
     
@@ -63,16 +63,16 @@
         @include mq(desktop) {
             background-image: url(../images/hero/hero-fon_lg.jpg),
                 linear-gradient(to bottom, #191c26, #191c26);
-            /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x),
-                    linear-gradient(to bottom, #191c26, #191c26);*/
+            background-image: -webkit-image-set(url(../images/hero/hero-fon_lg.webp) 1x),
+                    linear-gradient(to bottom, #191c26, #191c26);
     
             // Завантаження ретінізованого 2х фонового зображення
             @include mq(retina) {
                 background-image: url(../images/hero/hero-fon_lg@2x.jpg),
                     linear-gradient(to bottom, #191c26, #191c26);
     
-                /*background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x),
-                        linear-gradient(to bottom, #191c26, #191c26);*/
+                background-image: -webkit-image-set(url(../images/hero/hero-fon_lg@2x.webp) 2x),
+                        linear-gradient(to bottom, #191c26, #191c26);
             }
         }
 }
