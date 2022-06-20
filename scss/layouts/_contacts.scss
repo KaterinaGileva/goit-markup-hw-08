@@ -1,5 +1,6 @@
-.header__contacts {
+/*Header contacts*/
 
+.contacts {
     margin-left: auto;
 
     @include mq (tablet-only) {
@@ -12,7 +13,7 @@
     }
 }
 
-.header__contacts-list {
+.contacts__list {
    
     @include mq (desktop) {
     display: flex;
@@ -21,7 +22,7 @@
     }
 }    
 
-.header__contacts-item {
+.contacts__item {
     display: block;
     font-weight: 500;
     font-size: 12px;
@@ -29,7 +30,6 @@
     letter-spacing: 0.02em;
 
 @include mq (desktop) {
-    /*display: block;*/
     font-size: 14px;
     line-height: 1.14;
 
@@ -49,11 +49,9 @@
          }
 }
 
-.header__contacts-link {
-    
+.contacts__link {
     display: flex;
     
-
     &:hover,
     &:focus {
         color: var(--accent-cl);
@@ -66,12 +64,10 @@
 @include mq (desktop) {
    padding-top: 32px;
    padding-bottom: 32px;
-
 }
 }
 
-.header__contacts-icon {
-   
+.contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 }

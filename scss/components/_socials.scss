@@ -8,16 +8,16 @@
     align-items: center;
     margin-bottom: 24px;
     
-@include mq (desktop) {
+   @include mq (desktop) {
     margin-bottom: 30px;  
 } 
 }
 
-.socials-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.socials-link {
+.socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,15 +26,16 @@
     background-color: var(--main-bg-cl);
     color: var(--icons-cl);
     border-radius: 50%;
+
+&:hover,
+&:focus {
+        color: var(--main-bg-cl);
+        background-color: var(--accent-cl);
+    }
+
 }
 
-.socials-link:hover,
-.socials-link:focus {
-    color: var(--main-bg-cl);
-    background-color: var(--accent-cl);
-}
-
-.socials-icon {
+.socials__icon {
     display: block;
     fill: currentColor;
     margin-bottom: 0;
@@ -42,8 +43,8 @@
 
 /*Footer*/
 
+.social-box {
 
-.social-icon {
 @include mq (desktop) {
     margin-left: 70px;
     margin-right: 10px;
@@ -51,13 +52,10 @@
 
 @include mq (tablet-only) {
             margin-right: auto;
-           /* display: flex;*/
-        }
+}
 }
 
-
-.social-icon .title{
-
+.social-box__title {
     margin-bottom: 20px;
     text-align: left;
     text-transform: uppercase;
@@ -65,18 +63,19 @@
     font-size: 14px;
     line-height: 1.14;
 
-   @include mq (mobile-only){
+   @include mq (mobile-only) {
     display:block;
     text-align: center;
    }
 }
 
-.social-icon .link {
+.social-box__link {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--main-bg-cl);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-cl);
+    }
 }
 
-.social-icon .link:hover,
-.social-icon .link:focus {
-    background-color: var(--accent-cl);
-}

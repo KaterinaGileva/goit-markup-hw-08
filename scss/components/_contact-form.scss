@@ -1,3 +1,5 @@
+/*Подписка на рассылку*/
+
 .subscribe {
 
    @include mq(tablet-only) {
@@ -27,7 +29,7 @@
     }
 }
 
-.subscribe__form-input {
+.subscribe-form__input {
    
     padding-top: 15px;
     padding-bottom: 15px;
@@ -57,7 +59,7 @@
 }
 }
 
-.subscribe__form-btn {
+.subscribe-form__btn {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +90,7 @@
 }
 }
 
-.subscribe__form-icon {
+.subscribe-form__icon {
     display: inline-block;
     position: absolute;
     bottom: 10px;

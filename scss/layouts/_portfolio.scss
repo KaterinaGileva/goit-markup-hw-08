@@ -102,11 +102,7 @@
         max-width: 100%;
         
         }
-    /*
-    @include mq (desktop) {
-        
-        }*/
-}
+    }
 
 .project__link {
 
@@ -118,15 +114,9 @@
 .project__thumb {
     position: relative;
     overflow: hidden;
-    
-/*@include mq (tablet-only) {
-
-      
-}*/
 }
 
 .project__img{
-
 
 @include mq(desktop) {
             width: 370px;
@@ -137,7 +127,6 @@
     width: 354px;
     height: 294px;
 }
-
 }
 
 .project__overlay {
@@ -164,8 +153,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
-    color: var(--main-bg-cl);
-    
+    color: var(--main-bg-cl);  
 }
 
 .project__item:hover,
@@ -180,7 +168,7 @@
     
 }
 
-.card .title {
+.card__title {
     margin-bottom: 4px;
 
     color: var(--secondary-txt-cl);
@@ -190,7 +178,7 @@
     letter-spacing: 0.06em;
 }
 
-.card .text {
+.card__text {
     font-size: 16px;
     line-height: 1.88;
 }
