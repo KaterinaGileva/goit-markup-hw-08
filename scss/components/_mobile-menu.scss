@@ -14,33 +14,31 @@
 }
 
 .menu-toggle {
+    margin: 0;
+    padding: 0;
     
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     cursor: pointer;
     border: none;
     outline: none;
     margin-left: auto;
 
-.menu-toggle:hover {
+&:hover {
             fill: var(--accent-cl);
         }
     
-.menu-toggle:focus {
+&:focus {
             fill: var(--accent-cl);
         }
 
-}
+    @include mq (tablet) {
 
-@media (min-width: 768px) {
+    display: none;
 
-    .menu-toggle {
-        display: none;
     }
 }
 
@@ -54,11 +52,11 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    fill: black;
+    fill: var(--secondary-txt-cl);
 
 }
 
-.mobil-nav__link {
+.mobile-nav__link {
     display: block;
     padding-bottom: 32px;
 
@@ -83,13 +81,13 @@
 }
 }
 
-.contacts__list {
+.mobile-contacts__list {
 
     margin-top: auto;
     
 }
 
-.contacts__link--tel {
+.mobile-contacts__link--tel {
 
         display: block;
         padding-bottom: 32px;
@@ -99,19 +97,19 @@
         line-height: 1.18;       
         letter-spacing: 0.02em;
         
-        color: #2196F3;
+        color: var(--accent-cl);
         text-decoration: none;
     
 }
 
-.contacts__link--mail {
+.mobile-contacts__link--mail {
 
     font-weight: 500;
     font-size: 24px;
     line-height: 1.67;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--main-txt-cl);
     text-decoration: none;
 
 }
@@ -140,6 +138,5 @@ border: none;
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #2196F3;
-
+    color: var(--accent-cl);
 }

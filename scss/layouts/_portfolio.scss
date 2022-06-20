@@ -88,7 +88,7 @@
 }
     @include mq (desktop) {
     margin-top: 50px;
-        }
+}
 }
 
 .project__item {
@@ -96,12 +96,12 @@
     max-width: 100%;
     @include mq (mobile-only) {
         width: 100%;
-        }
+    }
     @include mq (tablet-only) {
         width: calc((100% - 30px) / 2);
         max-width: 100%;
         
-        }
+    }
     }
 
 .project__link {
@@ -116,7 +116,7 @@
     overflow: hidden;
 }
 
-.project__img{
+.project__img {
 
 @include mq(desktop) {
             width: 370px;
@@ -164,8 +164,7 @@
 .card {
     padding: 20px 24px;
     border: 1px solid var(--card-border-cl);
-    flex-grow: 1;
-    
+    flex-grow: 1;   
 }
 
 .card__title {

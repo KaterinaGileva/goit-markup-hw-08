@@ -88,7 +88,7 @@
                         <form class="modal-form">
                             <label class="modal-form__group">
                                 <span class="modal-form__label">Имя</span>
-                                <input class="modal-form__input" type="text" name="user-name" minlength="3"
+                                <input class="modal-form__input" type="team-member__text" name="user-name" minlength="3"
                                     placeholder=" " required />
                                 <span class="alert alert--warning"> Имя должно состоять минимум из 3 символов </span>
                                 <svg class="alert-icon alert-icon--warning" width="18" height="18">
@@ -248,7 +248,7 @@
         <section class="team section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="grid team-list list">
+                <ul class="grid team__list list">
                     <li class="grid-item">
                         <picture>
                             <!-- for desktop -->
@@ -282,9 +282,9 @@
                             <img class="team__img" src="./images/team/team-1_sm.jpg" alt="Игорь Демьяненко" width="450"
                                 height="460" loading="lazy">
                         </picture>
-                        <div class="member">
-                            <h3 class="title">Игорь Демьяненко</h3>
-                            <p class="text" lang="en">Product Designer</p>
+                        <div class="team-member">
+                            <h3 class="team-member__title">Игорь Демьяненко</h3>
+                            <p class="team-member__text" lang="en">Product Designer</p>
 
                             <!--Посилання на соцмережі-->
 
@@ -357,9 +357,9 @@
                             <img class="team__img" src="./images/team/team-2_sm.jpg" alt="Игорь Демьяненко" width="450"
                                 height="460" loading="lazy">
                         </picture>
-                        <div class="member">
-                            <h3 class="title">Ольга Репина</h3>
-                            <p class="text" lang="en">Frontend Developer</p>
+                        <div class="team-member">
+                            <h3 class="team-member__title">Ольга Репина</h3>
+                            <p class="team-member__text" lang="en">Frontend Developer</p>
                             <ul class="socials list">
                                 <li class="socials__item">
                                     <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
@@ -429,9 +429,9 @@
                             <img class="team__img" src="./images/team/team-3_sm.jpg" alt="Игорь Демьяненко" width="450"
                                 height="460" loading="lazy">
                         </picture>
-                        <div class="member">
-                            <h3 class="title">Николай Тарасов</h3>
-                            <p class="text" lang="en">Marketing</p>
+                        <div class="team-member">
+                            <h3 class="team-member__title">Николай Тарасов</h3>
+                            <p class="team-member__text" lang="en">Marketing</p>
                             <ul class="socials list">
                                 <li class="socials__item">
                                     <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
@@ -501,9 +501,9 @@
                             <img class="team__img" src="./images/team/team-4_sm.jpg" alt="Игорь Демьяненко" width="450"
                                 height="460" loading="lazy">
                         </picture>
-                        <div class="member">
-                            <h3 class="title">Михаил Ермаков</h3>
-                            <p class="text" lang="en">UI Designer</p>
+                        <div class="team-member">
+                            <h3 class="team-member__title">Михаил Ермаков</h3>
+                            <p class="team-member__text" lang="en">UI Designer</p>
                             <ul class="socials list">
                                 <li class="socials__item">
                                     <a class="socials__link link" href="" target="_blank" rel="noopener noreferrer"
@@ -611,26 +611,31 @@
                 <use class="icon-close" href="./images/icons.svg#close"></use>
             </svg>
         </button>
+
         <ul class="mobile-nav__list list">
             <li class="mobil-nav__item">
-                <a class="link mobil-nav__link current" href="#">Студия</a>
+                <a class="link mobile-nav__link current" href="#">Студия</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="link mobil-nav__link" href="./portfolio.html">Портфолио</a>
+                <a class="link mobile-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="mobile-nav__item">
-                <a class="link mobil-nav__link" href="#">Контакты</a>
+                <a class="link mobile-nav__link" href="#">Контакты</a>
             </li>
         </ul>
-        <ul class="contacts__list list ">
 
-            <li class="contacts__item">
-                <a class="link contacts__link--tel" href="tel:+380961111111">
+
+        <ul class="mobile-contacts__list list ">
+
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__link--tel" 
+                href="tel:+380961111111">
                     +38 096 111 11 11</a>
             </li>
 
-            <li class="contacts__item">
-                <a class="link contacts__link--mail" href="mailto:info@devstudio.com">
+            <li class="mobile-contacts__item">
+                <a class="link mobile-contacts__link--mail" 
+                href="mailto:info@devstudio.com">
                     info@devstudio.com</a>
             </li>
 

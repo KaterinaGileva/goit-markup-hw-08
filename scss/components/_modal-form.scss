@@ -10,16 +10,9 @@
     z-index: 999;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--modal-form-bg-cl);
     transition: opacity var(--fast-anim), visibility var(--fast-anim);
     overflow-y: scroll;
-
-}
-
-@media screen and (max-width: 767.98px){ 
-.modal-wrapper {
-    width: 450px;
-}
 }
 
 .backdrop.is-hidden {
@@ -41,13 +34,14 @@
     transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
 
 @include mq (mobile-only) {
+
     /*max-width: calc(100% - 30px);*/
     width: 92%;
 }
 
 @include mq (tablet-only) {
         max-width: 450px;
-        /*width:100%;*/
+        width:100%;
 }
 }
 
@@ -74,14 +68,14 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--boder-btn-cl);
     cursor: pointer;
     background-color: transparent;
     transition: fill var(--fast-anim) var(--timing-function);
-}
 
-.modal-btn:hover {
-    fill: var(--accent-cl)
+&:hover {
+        fill: var(--accent-cl)
+    }
 }
 
 /* modal form */

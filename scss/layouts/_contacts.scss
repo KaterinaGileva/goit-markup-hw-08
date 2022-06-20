@@ -74,24 +74,23 @@
 
 /*Footer*/
 
-@include mq (tablet-only){
-
 .adress {
+
+@include mq (tablet-only) {
+
     margin-bottom: 60px;
     display: block;
     margin-left: auto;
     margin-right: 165px;
     text-align: center;
-    }
 }
 
 @include mq (mobile-only) {
+    margin-bottom: 60px;
 
-    .adress {
-        margin-bottom: 60px;
-
-    }
 }
+}
+
 .adress__list {
     margin-top: 20px;
 }

@@ -4,7 +4,7 @@
 ============================
 */
 .hero {
-    /*background-color: var(--social-cl);*/
+    
     padding-top: 118px;
     padding-bottom: 118px;
     margin-left: auto;
@@ -115,14 +115,11 @@
         color: var(--accent-txt-cl);
         border: 1px solid var(--btn-bg);
         border-radius: 4px;
-        
-        
-        &:hover,
-        &:focus {
             
-            color: var(--accent-txt-cl);
-            background-color: var(--btn-bg-cl);
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        background-color: var(--btn-bg-cl);
         }
-
     }
     
