@@ -46,10 +46,9 @@
 }
 
 @include mq (tablet-only) {
-        width: 450px;
+        max-width: 450px;
+        width:100%;
 }
-
-
 }
 
 /* початковий стан елемента перед анімацією */
@@ -116,6 +115,7 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
+    text-align: start;
 }
 
 .modal-form__label:before {

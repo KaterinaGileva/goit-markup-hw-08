@@ -400,7 +400,8 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .modal-wrapper {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 
@@ -476,6 +477,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
+  text-align: start;
 }
 
 .modal-form__label:before {
