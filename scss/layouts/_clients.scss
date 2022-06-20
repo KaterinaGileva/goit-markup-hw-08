@@ -10,31 +10,21 @@
     border-radius: 4px;
     transition: border-color var(--fast-anim) var(--timing-function);
 
+    fill: var(--icons-cl);
+    transition: fill var(--fast-anim) var(--timing-function);
+
    @include mq (desktop) {
     width: 170px;
 }
 }
 
-.clients__icon {
-    fill: var(--icons-cl);
-    transition: fill var(--fast-anim) var(--timing-function);
-}
-
 .clients__link:hover {
     border: solid 1px var(--accent-cl);
+    fill: var(--accent-cl);
 }
 
 .clients__link:focus {
     border: solid 1px var(--accent-cl);
     fill: var(--accent-cl);
-}
-
-.clients__link:focus .clients__icon {
-    fill: var(--accent-cl);
-}
-
-.clients__link:hover .clients__icon {
-        fill: var(--accent-cl);
-        
 }
 
