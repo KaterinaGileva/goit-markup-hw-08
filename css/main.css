@@ -1494,9 +1494,13 @@ img {
   border: solid 1px var(--accent-cl);
 }
 
+.clients__link:focus {
+  border: solid 1px var(--accent-cl);
+  fill: var(--accent-cl);
+}
+
 .clients__link:focus .clients__icon {
   fill: var(--accent-cl);
-  border: solid 1px var(--accent-cl);
 }
 
 .clients__link:hover .clients__icon {
