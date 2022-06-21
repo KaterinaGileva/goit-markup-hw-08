@@ -63,11 +63,15 @@
     font-size: 14px;
     line-height: 1.14;
 
-   @include mq (mobile-only) {
+   @include mq (not-desktop) {
     display:block;
     text-align: center;
    }
 }
+
+
+
+
 
 .social-box__link {
     background-color: rgba(255, 255, 255, 0.1);

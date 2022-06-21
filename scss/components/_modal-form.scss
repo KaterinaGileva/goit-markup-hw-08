@@ -33,11 +33,18 @@
     background-color: var(--main-bg-cl);
     transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
 
-@include mq (mobile-only) {
-
+@media screen and (max-width: 480px){
     /*max-width: calc(100% - 30px);*/
     width: 92%;
 }
+
+@media screen and (min-width: 480px)
+and (max-width: 768px) {
+
+max-width: 450px;
+   width: 100%; 
+}
+
 
 @include mq (tablet-only) {
         max-width: 450px;

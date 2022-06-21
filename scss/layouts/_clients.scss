@@ -16,15 +16,22 @@
    @include mq (desktop) {
     width: 170px;
 }
-}
 
-.clients__link:hover {
+&:hover {
     border: solid 1px var(--accent-cl);
     fill: var(--accent-cl);
 }
 
-.clients__link:focus {
+&:focus {
     border: solid 1px var(--accent-cl);
     fill: var(--accent-cl);
 }
+
+&:current {
+    border: solid 1px var(--accent-cl);
+    fill: var(--accent-cl);
+}
+
+}
+
 

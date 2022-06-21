@@ -27,7 +27,7 @@ body {
             color: var(--secondary-txt-cl);
 
 @include mq(not-desktop) {
-        
+        margin-bottom: 30px;
         font-size: 28px;
         line-height: 1.18;
     }
